@@ -237,7 +237,7 @@ The architecture is organized around distinct modules responsible for various as
 Below is a simplified conceptual diagram representing the overall architecture and data flow:
 
 
-
+```
    +-------------------------+
    |  Input & Configuration  |
    |         Module          |
@@ -266,7 +266,7 @@ Below is a simplified conceptual diagram representing the overall architecture a
    |        Module           |
    +-------------------------+
 
-
+```
 
 > **Note:** This diagram is a conceptual overview. Actual implementations may include additional sub-modules and data flows.
 
