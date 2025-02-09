@@ -1,7 +1,7 @@
 //+------------------------------------------------------------------+
-//|                                                     Reverse_Edge |
-//|                        Copyright 2025, Your Name                 |
-//|                                       https://www.example.com    |
+//|                        Reverse_Edge                              |
+//|                        Copyright 2025, ALGORITHMIC GmbH          |
+//|                        https://www.algorihtmic.one               |
 //+------------------------------------------------------------------+
 #include <Trade\Trade.mqh>
 CTrade trade;
