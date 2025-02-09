@@ -37,27 +37,27 @@ This document details the architecture plan for the Expert Advisor (EA) system. 
 
 ## 2. Project Overview
 
-- **Objective:**  
+- **Objective:**
   Develop an EA with robust trading logic, risk management, and predictable loss control that can be thoroughly tested in a simulated environment.
 
-- **Scope:**  
-  Create an EA that’s designed to lose money in a structured, predictable way. The goal is to use a trade copier to reverse its trades and turn the losses into profit.  
+- **Scope:**
+  Create an EA that’s designed to lose money in a structured, predictable way. The goal is to use a trade copier to reverse its trades and turn the losses into profit.
   The EA will operate in a normal mode environment (without trade copier integration) and will be continuously improved using a global development approach.
 
 ---
 
 ## 3. Architectural Goals
 
-- **Modularity:**  
+- **Modularity:**
   Decompose the system into independent modules to simplify development, testing, and maintenance.
 
-- **Scalability:**  
+- **Scalability:**
   Ensure the system can accommodate additional functionalities and modifications without major redesign.
 
-- **Reliability:**  
+- **Reliability:**
   Build a robust system with comprehensive error handling and logging to monitor live performance.
 
-- **Efficiency:**  
+- **Efficiency:**
   Enable rapid iterations and testing using the Follow-the-Sun methodology for a continuous development cycle.
 
 ---
@@ -72,7 +72,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.1. Input & Configuration Module
 
-- **Purpose:**  
+- **Purpose:**
   Manage user-defined settings and parameters such as risk levels, trading times, and asset-specific inputs.
 
 - **Components:**
@@ -87,7 +87,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.2. Market Data & Signal Processing Module
 
-- **Purpose:**  
+- **Purpose:**
   Collect, preprocess, and analyze market data to generate actionable trading signals.
 
 - **Components:**
@@ -103,7 +103,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.3. Trading Logic & Strategy Engine
 
-- **Purpose:**  
+- **Purpose:**
   Implement the core trading strategies, including entry and exit logic.
 
 - **Components:**
@@ -118,7 +118,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.4. Risk Management Module
 
-- **Purpose:**  
+- **Purpose:**
   Monitor and control risk to ensure that every trade adheres to predefined risk parameters.
 
 - **Components:**
@@ -133,7 +133,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.5. Order Execution Module
 
-- **Purpose:**  
+- **Purpose:**
   Handle order placement, modification, and cancellation on the trading platform.
 
 - **Components:**
@@ -148,7 +148,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.6. Logging, Monitoring & Error Handling Module
 
-- **Purpose:**  
+- **Purpose:**
   Record events, errors, and transactions; provide real-time monitoring and alerts.
 
 - **Components:**
@@ -163,7 +163,7 @@ The architecture is organized around distinct modules responsible for various as
 
 ### 5.7. Testing & Simulation Module
 
-- **Purpose:**  
+- **Purpose:**
   Facilitate thorough testing of the EA using backtesting and live-simulation (normal mode).
 
 - **Components:**
@@ -236,7 +236,6 @@ The architecture is organized around distinct modules responsible for various as
 
 Below is a simplified conceptual diagram representing the overall architecture and data flow:
 
-
 ```
    +-------------------------+
    |  Input & Configuration  |
@@ -265,7 +264,6 @@ Below is a simplified conceptual diagram representing the overall architecture a
    | Testing & Simulation    |
    |        Module           |
    +-------------------------+
-
 ```
 
 > **Note:** This diagram is a conceptual overview. Actual implementations may include additional sub-modules and data flows.
@@ -279,3 +277,6 @@ This EA Architecture Plan provides a detailed roadmap for developing a robust, m
 By leveraging the Follow-the-Sun methodology, the development process will be continuous and efficient, enabling rapid iterations and prompt issue resolution.
 
 The design supports both live trading and comprehensive testing in a normal mode environment, ensuring that the EA meets its objectives of predictable losses, robust risk management, and effective trading strategy execution.
+
+## Expert Advisors
+- **Reverse_Edge**: Advanced trading strategy based on MACD, RSI, and Stochastic indicators with partial close and risk management features.
